@@ -40,17 +40,18 @@ public class TripletSum {
     
     public static int tripletSum(int[] arr, int num)
     {
-        int n=arr.length;
-        Arrays.sort(arr);
+        int n=arr.length;   //taking length of the array
+        Arrays.sort(arr);   //sorting the array
         int count=0;
         int k=0;
-        for(int i=0;i<n-2;i++)
+        for(int i=0;i<n-2;i++)                              //array starts from the 0th position
         {
             System.out.println("value of i is "+arr[i]);
-            for(int j=i+1;j<n-1;j++)
+            for(int j=i+1;j<n-1;j++)                        //array starts from 1st position if i val is 0
             {
                 System.out.print(" | value of j is "+arr[j]);
-                for(k=j+1;k<n;)
+                for(k=j+1;k<n;)                                 //array starts from 2nd position if j val is 1
+                                                                //as j val increases k value also increases 
                 {
                     System.out.print(" | value of k is "+arr[k]);
                     if (arr[i]+arr[j]+arr[k]==num) 
