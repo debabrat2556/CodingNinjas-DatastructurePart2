@@ -19,10 +19,17 @@ public class SumoOfArray {
         {
             return 0;
         }
+        //in the above statement if the array length is 0 the program is supposed to return 0 value
+
         int smallArray[]=new int[input.length-1];
-        for(int i=1;i<input.length;i++)
+        //here we are creating a smaller array 
+        //so if the original size is 5, for this array it would be for
+
+        for(int i=1;i<input.length;i++) //the 1st position is considered after the for loop
+                                        //so starting from 2nd postion to n-1
         {
             smallArray[i-1]=input[i];
+            //this signifies smallArray[0]=input[1]
         }
         int output=input[0]+sum(smallArray);
         return output;
