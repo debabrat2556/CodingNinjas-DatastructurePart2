@@ -12,9 +12,9 @@ public class PrintFirstNNaturalNumbers {
     {
         if(n<=0)
         {
-            return;
+            return;     //if value becomes 0 or less than 0 we directly return
         }
-        print(n-1);
+        print(n-1);        // function recalling itself and decreasing n value by 1 ata a time
         System.out.print(n+" ");
     }
 
